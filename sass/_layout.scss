@@ -1,0 +1,56 @@
+.container {
+  background-color: lightblue;
+  max-width: 100%;
+  height: 100vh;
+}
+
+.header {
+  background-color: lightyellow;
+  height: 7rem;
+}
+
+.user-nav {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3rem;
+
+  &__about {
+    font-family: inherit;
+  }
+
+  &__store {
+    font-family: inherit;
+  }
+
+  &__gmail {
+    font-family: inherit;
+  }
+
+  &__images {
+    font-family: inherit;
+  }
+
+  &__icon {
+  }
+  &__user {
+  }
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.main-logo {
+  font-size: 10rem;
+}
+.search {
+}
+
+.button {
+}
+.user-nav-bottom {
+  background-color: lightgreen;
+  height: 6rem;
+  font-size: 1.3rem;
+}

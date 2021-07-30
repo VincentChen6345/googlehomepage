@@ -1,11 +1,5 @@
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  font-size: 62.5%; //1rem=10px;
-  box-sizing: border-box;
-}
+@import "base";
+@import "layout";
+@import "components";
+@import "typography";
+@import "variables";
