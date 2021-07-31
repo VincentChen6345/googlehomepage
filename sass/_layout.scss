@@ -1,45 +1,106 @@
 .container {
-  background-color: lightblue;
   max-width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 
 .header {
-  background-color: lightyellow;
   height: 7rem;
+  max-width: 100%;
 }
 
 .user-nav {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
+  display: flex;
+  // flex-direction: row;
+  justify-content: space-between;
 
-  &__about {
+  &__left {
     font-family: inherit;
-  }
 
-  &__store {
+    padding: 2.5rem;
+    width: 30%;
+
+    & > *:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+    &__about {
+      font-family: inherit;
+    }
+
+    &__store {
+      font-family: inherit;
+      padding-left: 1.5rem;
+    }
+  }
+  &__right {
     font-family: inherit;
-  }
 
-  &__gmail {
-    font-family: inherit;
-  }
+    height: 7rem;
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2.5rem;
+    font-size: 1.3rem;
+    transform: translateY(-5px);
+    z-index: 1;
 
-  &__images {
-    font-family: inherit;
-  }
+    & > * {
+      padding: 0 0.4rem;
+      cursor: pointer;
+    }
+    & > *:hover {
+      text-decoration: underline;
+    }
+    &__gmail {
+      font-family: inherit;
+      padding-right: 1.5rem;
+    }
 
-  &__icon {
-  }
-  &__user {
+    &__images {
+      font-family: inherit;
+      padding-right: 2rem;
+      position: relative;
+      right: 0.5rem;
+    }
+    &__user-photo {
+      height: 3.3rem;
+      width: 3.3rem;
+      padding: 0;
+      border-radius: 50%;
+      position: relative;
+      left: 1rem;
+
+      &:hover {
+        box-shadow: 0 0 0 0.5rem var(--cool-grey-light-2);
+        width: 3.3rem;
+        padding: 0;
+      }
+    }
+
+    &__icon {
+      width: 3.2rem;
+      height: 3.2rem;
+      border-radius: 50%;
+      position: relative;
+      right: 1rem;
+      fill: var(--cool-grey-dark);
+
+      &:hover {
+        box-shadow: 0 0 0 0.5rem var(--cool-grey-light-2);
+        background-color: var(--cool-grey-light-2);
+      }
+    }
   }
 }
-
 .content {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background-color: lightblue;
 }
 .main-logo {
   font-size: 10rem;
@@ -53,4 +114,5 @@
   background-color: lightgreen;
   height: 6rem;
   font-size: 1.3rem;
+  max-width: 100rem;
 }

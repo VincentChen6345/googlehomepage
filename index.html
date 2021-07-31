@@ -11,18 +11,29 @@
     <div class="container">
       <header class="header">
         <nav class="user-nav">
-          <span class="user-nav__about">About</span>
-          <span class="user-nav__store">Store</span>
-          <span class="user-nav__gmail">Gmail</span>
-          <span class="user-nav__images">Images</span>
-          <img src="#" alt="google apps" class="user-nav__icon" />
-          <img src="#" alt="user photo" class="user-nav__user" />
+          <div class="user-nav__left">
+            <span class="user-nav__left__about">About</span>
+            <span class="user-nav__left__store">Store</span>
+          </div>
+          <div class="user-nav__right">
+            <span class="user-nav__right__gmail">Gmail</span>
+            <span class="user-nav__right__images">Images</span>
+            <svg class="user-nav__right__icon">
+              <use xlink:href="img/sprite.svg#icon-apps"></use>
+            </svg>
+
+            <img
+              src="img/portrait.jpg"
+              alt="user photo"
+              class="user-nav__right__user-photo"
+            />
+        
+          </div>
         </nav>
       </header>
       <div class="content">
-        <div>
-          <main class="main-logo">Google</main>
-        </div>
+        <main class="main-logo">Google</main>
+
         <div>
           <form action="#" class="search">
             <input type="text" class="search__input" />
@@ -34,12 +45,18 @@
         </div>
       </div>
       <nav class="user-nav-bottom">
-        <span class="user-nav-bottom__advertising">Advertising</span>
-        <span class="user-nav-bottom__business">Business</span>
-        <span class="user-nav-bottom__how-search-works">How Search Works</span>
-        <span class="user-nav-bottom__privacy">Privacy</span>
-        <span class="user-nav-bottom__terms">Terms</span>
-        <span class="user-nav-bottom__settings">Settings</span>
+        <div class="user-nav-bottom-left">
+          <span class="user-nav-bottom-left__advertising">Advertising</span>
+          <span class="user-nav-bottom-left__business">Business</span>
+          <span class="user-nav-bottom-left__how-search-works"
+            >How Search Works</span
+          >
+        </div>
+        <div class="user-nav-bottom-right">
+          <span class="user-nav-bottom-right__privacy">Privacy</span>
+          <span class="user-nav-bottom-right__terms">Terms</span>
+          <span class="user-nav-bottom-right__settings">Settings</span>
+        </div>
       </nav>
     </div>
   </body>

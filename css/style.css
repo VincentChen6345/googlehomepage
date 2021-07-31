@@ -13,31 +13,82 @@ html {
   font-family: "product sans"; }
 
 .container {
-  background-color: lightblue;
   max-width: 100%;
-  height: 100vh; }
+  height: 100%; }
 
 .header {
-  background-color: lightyellow;
-  height: 7rem; }
+  height: 7rem;
+  max-width: 100%; }
 
 .user-nav {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.3rem; }
-  .user-nav__about {
-    font-family: inherit; }
-  .user-nav__store {
-    font-family: inherit; }
-  .user-nav__gmail {
-    font-family: inherit; }
-  .user-nav__images {
-    font-family: inherit; }
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: space-between; }
+  .user-nav__left {
+    font-family: inherit;
+    padding: 2.5rem;
+    width: 30%; }
+    .user-nav__left > *:hover {
+      text-decoration: underline;
+      cursor: pointer; }
+    .user-nav__left__about {
+      font-family: inherit; }
+    .user-nav__left__store {
+      font-family: inherit;
+      padding-left: 1.5rem; }
+  .user-nav__right {
+    font-family: inherit;
+    height: 7rem;
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2.5rem;
+    font-size: 1.3rem;
+    transform: translateY(-5px);
+    z-index: 1; }
+    .user-nav__right > * {
+      padding: 0 0.4rem;
+      cursor: pointer; }
+    .user-nav__right > *:hover {
+      text-decoration: underline; }
+    .user-nav__right__gmail {
+      font-family: inherit;
+      padding-right: 1.5rem; }
+    .user-nav__right__images {
+      font-family: inherit;
+      padding-right: 2rem;
+      position: relative;
+      right: 0.5rem; }
+    .user-nav__right__user-photo {
+      height: 3.3rem;
+      width: 3.3rem;
+      padding: 0;
+      border-radius: 50%;
+      position: relative;
+      left: 1rem; }
+      .user-nav__right__user-photo:hover {
+        box-shadow: 0 0 0 0.5rem var(--cool-grey-light-2);
+        width: 3.3rem;
+        padding: 0; }
+    .user-nav__right__icon {
+      width: 3.2rem;
+      height: 3.2rem;
+      border-radius: 50%;
+      position: relative;
+      right: 1rem;
+      fill: var(--cool-grey-dark); }
+      .user-nav__right__icon:hover {
+        box-shadow: 0 0 0 0.5rem var(--cool-grey-light-2);
+        background-color: var(--cool-grey-light-2); }
 
 .content {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column; }
+  flex-direction: column;
+  background-color: lightblue; }
 
 .main-logo {
   font-size: 10rem; }
@@ -45,8 +96,14 @@ html {
 .user-nav-bottom {
   background-color: lightgreen;
   height: 6rem;
-  font-size: 1.3rem; }
+  font-size: 1.3rem;
+  max-width: 100rem; }
 
 @font-face {
   font-family: "product sans";
   src: url("Product Sans 400.ttf"); }
+
+:root {
+  --cool-grey-dark: rgb(97, 96, 96);
+  --cool-grey-light: rgb(229, 231, 216);
+  --cool-grey-light-2: #f0f0f0; }
