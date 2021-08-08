@@ -3,8 +3,12 @@
   border: 0;
   font-size: 1.4rem;
   padding: 1rem 1.5rem;
+
   border-radius: 4px;
   font-family: Arial, Helvetica, sans-serif;
+  &:hover > * {
+    cursor: pointer;
+  }
   &__search {
     border: inherit;
     font-size: inherit;
@@ -12,6 +16,8 @@
     border-radius: inherit;
     font-family: inherit;
     margin-right: 3px;
+    background-color: var(--cool-grey-light-3);
+    color: var(--button-grey);
   }
 
   &__lucky {
@@ -21,5 +27,7 @@
     border-radius: inherit;
     font-family: inherit;
     margin-left: 3px;
+    background-color: var(--cool-grey-light-3);
+    color: var(--button-grey);
   }
 }

@@ -31,10 +31,39 @@
         </nav>
       </header>
       <div class="content">
-        <main class="main-logo">Google</main>
+        <main class="main-logo">
+          <span style="color: var(--google-blue)" class="main-logo-letters__G"
+            >G</span
+          >
+          <span style="color: var(--google-red)" class="main-logo-letters__o"
+            >o</span
+          >
+          <span style="color: var(--google-yellow)" class="main-logo-letters__o"
+            >o</span
+          >
+          <span style="color: var(--google-blue)" class="main-logo-letters__g"
+            >g</span
+          >
+          <span style="color: var(--google-green)" class="main-logo-letters__l"
+            >l</span
+          >
+          <span style="color: var(--google-red)" class="main-logo-letters__e"
+            >e</span
+          >
+        </main>
 
         <form action="#" class="search">
           <input type="text" class="search__input" />
+          <div class="search__icon">
+            <svg class="search__icon-search">
+              <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+            </svg>
+          </div>
+          <div class="search__icon">
+            <svg class="search__icon-voice">
+              <use xlink:href="img/sprite.svg#icon-mic"></use>
+            </svg>
+          </div>
         </form>
 
         <div class="btn">
@@ -43,18 +72,12 @@
         </div>
       </div>
       <nav class="user-nav-bottom">
-        <div class="user-nav-bottom-left">
-          <span class="user-nav-bottom-left__advertising">Advertising</span>
-          <span class="user-nav-bottom-left__business">Business</span>
-          <span class="user-nav-bottom-left__how-search-works"
-            >How Search Works</span
-          >
-        </div>
-        <div class="user-nav-bottom-right">
-          <span class="user-nav-bottom-right__privacy">Privacy</span>
-          <span class="user-nav-bottom-right__terms">Terms</span>
-          <span class="user-nav-bottom-right__settings">Settings</span>
-        </div>
+        <span class="user-nav-bottom__advertising">Advertising</span>
+        <span class="user-nav-bottom__business">Business</span>
+        <span class="user-nav-bottom__how-search-works"> How Search Works</span>
+        <span class="user-nav-bottom__privacy">Privacy</span>
+        <span class="user-nav-bottom__terms">Terms</span>
+        <span class="user-nav-bottom__settings">Settings</span>
       </nav>
     </div>
   </body>
