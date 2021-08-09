@@ -158,19 +158,12 @@
 .search {
   display: flex;
   justify-content: center;
-
   position: relative;
-  // top: 33.5%;
-
   height: 4.5rem;
   width: 100%;
   max-width: 58rem;
   margin-bottom: 3rem;
 
-  // transform: translateY(-550%);
-  ///////////////////
-  ////////////FIGURE OUT HOW TO PROPERLY ALIGN ELEMENTS IN ORDER!!
-  ///////////////////
   &__input {
     max-width: 58rem;
     width: 100%;
@@ -179,26 +172,35 @@
     height: 4.5rem;
 
     flex-basis: 1;
+
+    &:hover {
+      box-shadow: 0px 1px 8px var(--cool-grey-light-2);
+      cursor: text;
+    }
   }
   &__icon {
-    height: 100%;
+    width: 0;
+    border: 0;
   }
-  &__icon-search {
-    width: 1.8rem;
-    height: 1.8rem;
-    position: absolute;
+}
+.icon-search {
+  width: 1.8rem;
+  height: 1.8rem;
+  position: absolute;
 
-    left: 1.53rem;
-    top: 1.2rem;
-    fill: var(--cool-grey-light-2);
-  }
-  &__icon-voice {
-    width: 1.8rem;
-    height: 1.8rem;
-    position: absolute;
-    fill: var(--cool-grey-light-2);
-    right: 1.58rem;
-    top: 1.2rem;
+  left: 1.53rem;
+  top: 1.2rem;
+  fill: var(--cool-grey-icon);
+}
+.icon-voice {
+  width: 1.8rem;
+  height: 1.8rem;
+  position: absolute;
+  fill: var(--google-blue);
+  right: 1.58rem;
+  top: 1.2rem;
+  &:hover {
+    cursor: pointer;
   }
 }
 
@@ -222,6 +224,10 @@
     padding: 0rem 1.6rem;
     margin-top: 2px;
     color: var(--cool-grey-dark);
+  }
+  & > *:hover {
+    text-decoration: underline;
+    cursor: pointer;
   }
   &__advertising {
     margin-left: 2rem;

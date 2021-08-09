@@ -18,6 +18,12 @@
     margin-right: 3px;
     background-color: var(--cool-grey-light-3);
     color: var(--button-grey);
+    border: 1px solid transparent;
+
+    &:hover {
+      border: 1px solid var(--cool-grey-light-2);
+      box-shadow: 0px 1px 3px var(--cool-grey-light-2);
+    }
   }
 
   &__lucky {
@@ -29,5 +35,11 @@
     margin-left: 3px;
     background-color: var(--cool-grey-light-3);
     color: var(--button-grey);
+    border: 1px solid transparent;
+    &:hover {
+      border: 1px solid var(--cool-grey-light-2);
+
+      box-shadow: 0px 1px 3px var(--cool-grey-light-2);
+    }
   }
 }

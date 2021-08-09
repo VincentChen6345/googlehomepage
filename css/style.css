@@ -138,20 +138,30 @@ html {
     border: 1px solid var(--cool-grey-light-2);
     height: 4.5rem;
     flex-basis: 1; }
+    .search__input:hover {
+      box-shadow: 0px 1px 8px var(--cool-grey-light-2);
+      cursor: text; }
   .search__icon {
-    height: 100%; }
-  .search__icon-search {
-    width: 1.8rem;
-    height: 1.8rem;
-    position: absolute;
-    left: 1.53rem;
-    top: 1.2rem; }
-  .search__icon-voice {
-    width: 1.8rem;
-    height: 1.8rem;
-    position: absolute;
-    right: 1.58rem;
-    top: 1.2rem; }
+    width: 0;
+    border: 0; }
+
+.icon-search {
+  width: 1.8rem;
+  height: 1.8rem;
+  position: absolute;
+  left: 1.53rem;
+  top: 1.2rem;
+  fill: var(--cool-grey-icon); }
+
+.icon-voice {
+  width: 1.8rem;
+  height: 1.8rem;
+  position: absolute;
+  fill: var(--google-blue);
+  right: 1.58rem;
+  top: 1.2rem; }
+  .icon-voice:hover {
+    cursor: pointer; }
 
 .user-nav-bottom {
   background-color: var(--cool-grey-light);
@@ -168,6 +178,9 @@ html {
     padding: 0rem 1.6rem;
     margin-top: 2px;
     color: var(--cool-grey-dark); }
+  .user-nav-bottom > *:hover {
+    text-decoration: underline;
+    cursor: pointer; }
   .user-nav-bottom__advertising {
     margin-left: 2rem; }
   .user-nav-bottom__privacy {
@@ -192,7 +205,11 @@ html {
     font-family: inherit;
     margin-right: 3px;
     background-color: var(--cool-grey-light-3);
-    color: var(--button-grey); }
+    color: var(--button-grey);
+    border: 1px solid transparent; }
+    .btn__search:hover {
+      border: 1px solid var(--cool-grey-light-2);
+      box-shadow: 0px 1px 3px var(--cool-grey-light-2); }
   .btn__lucky {
     border: inherit;
     font-size: inherit;
@@ -201,7 +218,11 @@ html {
     font-family: inherit;
     margin-left: 3px;
     background-color: var(--cool-grey-light-3);
-    color: var(--button-grey); }
+    color: var(--button-grey);
+    border: 1px solid transparent; }
+    .btn__lucky:hover {
+      border: 1px solid var(--cool-grey-light-2);
+      box-shadow: 0px 1px 3px var(--cool-grey-light-2); }
 
 @font-face {
   font-family: "Product Sans";
@@ -212,6 +233,7 @@ html {
   --cool-grey-light: #f2f2f2;
   --cool-grey-light-2: #e0e2e7;
   --cool-grey-light-3: #f8f9fa;
+  --cool-grey-icon: #828991;
   --google-blue: #4285f4;
   --google-green: #0f9d58;
   --google-red: #db4437;
