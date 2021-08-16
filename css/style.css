@@ -138,9 +138,11 @@ html {
     border: 1px solid var(--cool-grey-light-2);
     height: 4.5rem;
     flex-basis: 1; }
-    .search__input:hover {
+    .search__input:hover, .search__input:active, .search__input:focus, .search__input:after, .search__input:visited {
       box-shadow: 0px 1px 8px var(--cool-grey-light-2);
-      cursor: text; }
+      cursor: text;
+      outline: none;
+      padding: 0 1rem; }
   .search__icon {
     width: 0;
     border: 0; }
@@ -150,7 +152,7 @@ html {
   height: 1.8rem;
   position: absolute;
   left: 1.53rem;
-  top: 1.2rem;
+  top: 1.3rem;
   fill: var(--cool-grey-icon); }
 
 .icon-voice {
