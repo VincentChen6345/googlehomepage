@@ -137,12 +137,12 @@ html {
     border-radius: 50px;
     border: 1px solid var(--cool-grey-light-2);
     height: 4.5rem;
+    padding: 0 4rem;
     flex-basis: 1; }
     .search__input:hover, .search__input:active, .search__input:focus, .search__input:after, .search__input:visited {
       box-shadow: 0px 1px 8px var(--cool-grey-light-2);
       cursor: text;
-      outline: none;
-      padding: 0 1rem; }
+      outline: none; }
   .search__icon {
     width: 0;
     border: 0; }
